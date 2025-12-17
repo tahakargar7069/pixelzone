@@ -3,22 +3,22 @@
 ============================== */
 @font-face {
   font-family: "IRANYekanX";
-  src: url("fonts/IRANYekanX-Regular.woff2") format("woff2"),
-       url("fonts/IRANYekanX-Regular.woff") format("woff");
+  src: url("font/IRANYekanX-Regular.woff2") format("woff2"),
+       url("font/IRANYekanX-Regular.woff") format("woff");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "IRANYekanX";
-  src: url("fonts/IRANYekanX-Medium.woff2") format("woff2"),
-       url("fonts/IRANYekanX-Medium.woff") format("woff");
+  src: url("font/IRANYekanX-Medium.woff2") format("woff2"),
+       url("font/IRANYekanX-Medium.woff") format("woff");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "IRANYekanX";
-  src: url("fonts/IRANYekanX-Bold.woff2") format("woff2"),
-       url("fonts/IRANYekanX-Bold.woff") format("woff");
+  src: url("font/IRANYekanX-Bold.woff2") format("woff2"),
+       url("font/IRANYekanX-Bold.woff") format("woff");
   font-weight: 700;
 }
 
@@ -211,3 +211,4 @@ body {
   line-height: 1.9;
   color: rgba(255, 255, 255, 0.9);
 }
+

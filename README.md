@@ -1,2 +1,0 @@
-# pixelzone
-bisnes card

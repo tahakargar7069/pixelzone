@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixelZone</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-glass">
+        <span class="header-title">پیکسل‌زون</span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+
+      <!-- Logo Box -->
+      <section class="logo-section">
+        <div class="logo-box">
+          <img src="img/PixelZone.png" alt="PixelZone Logo">
+        </div>
+      </section>
+
+      <!-- About Box -->
+      <section class="about-section">
+        <div class="about-glass">
+          <h2 class="about-title">درباره‌ی ما</h2>
+          <div class="about-divider"></div>
+          <p class="about-text">
+            پیکسل‌زون، جایی که ایده‌ها به تصویر تبدیل می‌شن.
+            از طراحی تامبنیل‌های چشم‌گیر و لوگوهای حرفه‌ای تا بنرهای تبلیغاتی هدفمند، کنار برندت هستیم.
+            با طراحی سایت‌های مدرن و کاربرپسند، حضورت رو در دنیای دیجیتال قدرتمند می‌کنیم.
+            کارت ویزیت هوشمند پیکسل‌زون، معرفی متفاوت و ماندگار تو به مشتریانه.
+            اگه دنبال دیده شدن واقعی هستی، پیکسل‌زون انتخاب هوشمندانه‌ست.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Box -->
+      <section class="contact-section">
+        <div class="contact-glass">
+          <h2 class="contact-title">ارتباط با ما</h2>
+          <div class="contact-divider"></div>
+          <p class="contact-address">
+            نشانی مغازه : شهر ، خیابان ، کوچه ، پلاک
+          </p>
+          <div class="contact-divider"></div>
+
+          <!-- Contact Icons -->
+          <div class="contact-icons">
+            <!-- Instagram (LEFT) -->
+            <a href="https://www.instagram.com/pixelzone_official?igsh=MTczdjFma3BzbDY1ZQ=="
+               class="contact-icon"
+               target="_blank"
+               aria-label="Instagram">
+              <img src="img/insta.png" alt="Instagram Icon">
+            </a>
+
+            <!-- Phone (CENTER) -->
+            <a href="tel:09123456789"
+               class="contact-icon phone-icon"
+               aria-label="Phone">
+              <img src="img/phone.png" alt="Phone Icon">
+            </a>
+
+            <!-- Telegram (RIGHT) -->
+            <a href="https://t.me/PixelZone_Official"
+               class="contact-icon"
+               target="_blank"
+               aria-label="Telegram">
+              <img src="img/tel.png" alt="Telegram Icon">
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    document.querySelectorAll('.phone-icon').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const phone = btn.dataset.phone;
+    
+        // ایجاد یک input موقت
+        const tempInput = document.createElement('input');
+        tempInput.value = phone;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999); // برای موبایل
+    
+        // تلاش برای کپی
+        try {
+          document.execCommand('copy');
+        } catch (err) {
+          console.error('کپی نشد!', err);
+        }
+    
+        document.body.removeChild(tempInput);
+      });
+    });
+    </script>
+    
+</body>
+</html>
